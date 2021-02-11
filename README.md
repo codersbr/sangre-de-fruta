@@ -7,4 +7,4 @@ Este repositório foi criado com o objetivo de estudo. Como resultado visamos im
 * CSS (BEM)
 * JS
 * SASS
-* Gulp
+* Gulp [boilerplate usado](https://travis-ci.org/cferdinandi/gulp-boilerplate)
