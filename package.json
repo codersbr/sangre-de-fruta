@@ -1,7 +1,7 @@
 {
-	"name": "project-name",
+	"name": "sangre-de-fruta",
 	"version": "0.0.1",
-	"description": "A description for your project.",
+	"description": "Este projeto foi criado com o objetivo de estudo. Como resultado visamos implementar o site Sangre de Fruta.",
 	"main": "./dist/your-main-js-file.js",
 	"author": {
 		"name": "YOUR NAME",
