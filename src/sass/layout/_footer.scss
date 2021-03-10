@@ -11,7 +11,8 @@
         padding: 20px 0px;
 
         ul {
-            // display: flex;
+            //to change jc-c for align horizontal
+            @extend %jc-c;
 
             li {
                 &:not(:last-child) {
@@ -22,7 +23,8 @@
     }
 
     &-socials {
-        // display: flex;
+        //to change jc-c for align vertical
+        @extend %jc-c;
 
         padding-top: 20px;
     }
