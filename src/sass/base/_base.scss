@@ -2,6 +2,7 @@
 // This file contains very basic styles.
 // -----------------------------------------------------------------------------
 
+
 /**
  * Set up a decent box model on the root element
  */
@@ -22,6 +23,14 @@ html {
 }
 
 /**
+ * Set up margin and padding to 0
+ */
+ *{
+  margin: 0;
+  padding: 0;
+}
+
+/**
  * Basic styles for links
  */
 a {
@@ -35,29 +44,29 @@ a {
 }
 
 //Flexbox
-.flex{
-  display: flex;
+// .flex{
+//   display: flex;
 
-  // Space between
-  &-jc-sb{
-    justify-content: space-between;
-  }
+//   // Space between
+//   &-jc-sb{
+//     justify-content: space-between;
+//   }
 
-  // Space around
-  &-jc-sa{
-    justify-content: space-around;
-  }
+//   // Space around
+//   &-jc-sa{
+//     justify-content: space-around;
+//   }
 
-  // Horizontal align
-  &-jc-c{
-    justify-content: center;
-  }
+//   // Horizontal align
+//   &-jc-c{
+//     justify-content: center;
+//   }
 
-  // Vertical align
-  &-ai-c{
-    align-items: center;
-  }
-}
+//   // Vertical align
+//   &-ai-c{
+//     align-items: center;
+//   }
+// }
 
 // Basic styles for lists
 li{
