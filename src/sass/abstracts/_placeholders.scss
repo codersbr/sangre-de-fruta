@@ -1,0 +1,52 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass placeholders.
+// -----------------------------------------------------------------------------
+
+
+%flex{
+    display: flex;
+}
+
+%jc-sb{
+    @extend %flex;
+    justify-content: space-between;
+}
+
+%jc-sa{
+    @extend %flex;
+    justify-content: center;
+}
+
+%jc-c{
+    @extend %flex;
+    justify-content: center;
+}
+
+%ai-c{
+    @extend %flex;
+    justify-content: center;
+}
+
+// .flex{
+//     display: flex;
+  
+//     // Space between
+//     &-jc-sb{
+//       justify-content: space-between;
+//     }
+  
+//     // Space around
+//     &-jc-sa{
+//       justify-content: space-around;
+//     }
+  
+//     // Horizontal align
+//     &-jc-c{
+//       justify-content: center;
+//     }
+  
+//     // Vertical align
+//     &-ai-c{
+//       align-items: center;
+//     }
+//   }
