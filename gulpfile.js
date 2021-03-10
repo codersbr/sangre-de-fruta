@@ -10,6 +10,7 @@ var settings = {
 	styles: true,
 	svgs: true,
 	images: true,
+	fonts: true,
 	copy: true,
 	reload: true
 };
@@ -38,6 +39,10 @@ var paths = {
 	images: {
 		input: 'src/images/**/*',
 		output: 'dist/images/'
+	},
+	fonts:{
+		input: 'src/fonts/**/*',
+		output:'dist/fonts/'
 	},
 	copy: {
 		input: 'src/copy/**/*',
@@ -246,8 +251,8 @@ var buildImages = function (done) {
 
 };
 
-// Copy static files into output folder
-var copyFiles = function (done) {
+// Copy html pages files into output folder
+var copyPages = function (done) {
 
 	// Make sure this feature is activated before running
 	if (!settings.copy) return done();
@@ -255,7 +260,17 @@ var copyFiles = function (done) {
 	// Copy static files
 	return src(paths.copy.input)
 		.pipe(dest(paths.copy.output));
+};
 
+// Copy font files into output folder
+var copyFonts = function (done) {
+
+	// Make sure this feature is activated before running
+	if (!settings.fonts) return done();
+
+	// Copy font files
+	return src(paths.fonts.input)
+		.pipe(dest(paths.fonts.output));
 };
 
 // Watch for changes to the src directory
@@ -304,7 +319,8 @@ exports.default = series(
 		buildStyles,
 		buildSVGs,
 		buildImages,
-		copyFiles
+		copyFonts,
+		copyPages
 	)
 );
 
